@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>lab1</title>
+<script>
+let result = () => {
+var sum = 0;
+ 
+var x = Number(document.forms["frm"].elements["x"].value);
+if (-1 < x && x <=1) {
+    for (var i = 0; i < n; i++) {
+    sum = sum + (((-1)**i) * (x**(i+1)) / (i + 1))
+    }
+    document.writeln(sum)
+    } else {
+        document.writeln("неверное условие")
+    }
+}
+</script>
+</head>
+<body>
+<form id = "frm">
+<input type="text" id="n">
+<input type = "text" id="x">
+<button onclick="result()">Отправить</button>
+</form>
+</body>
